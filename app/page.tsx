@@ -1,7 +1,5 @@
-"use client"
+"use client";
 
-import CoverParticles from "@/components/cover-particles";
-import FondoAnimate from "@/components/fondoAnimate";
 import Introduccion from "@/components/introduccion";
 import TransitionPage from "@/components/transition-page";
 

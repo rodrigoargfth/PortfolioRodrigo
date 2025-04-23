@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { itemsNavbar } from "@/data";
 import Link from "next/link";

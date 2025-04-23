@@ -5,30 +5,16 @@ import {
   CodeSquare,
   HomeIcon,
   UserRound,
-  Linkedin,
-  Twitter,
-  Rss,
-  Twitch,
-  Youtube,
-  Crop,
-  Pencil,
-  Computer,
-  Book,
-  Rocket,
-  Speech,
-  FacebookIcon,
   BrainCircuit,
   UserRoundSearch,
   MailIcon,
-  MailsIcon,
 } from "lucide-react";
-import { FaJava, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import {
   PiGithubLogoLight,
   PiLinkedinLogoBold,
-  PiLinkedinLogoLight,
 } from "react-icons/pi";
-import { SiCss3, SiGmail, SiHtml5, SiJavascript, SiReact } from "react-icons/si";
+import { SiCss3, SiHtml5, SiJavascript, SiReact } from "react-icons/si";
 
 const phoneNumber = "543571551393";
 const message = encodeURIComponent("Hola, Soy Rodrigo");
@@ -198,5 +184,4 @@ export const frontendTech = [
     name: "HTML",
     icon: SiHtml5,
   },
-  // Agrega más tecnologías si lo necesitas
 ];

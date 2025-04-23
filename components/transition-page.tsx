@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { transitionVariantPage } from "@/utils/motion-transitions";
 import { AnimatePresence, motion } from "framer-motion";

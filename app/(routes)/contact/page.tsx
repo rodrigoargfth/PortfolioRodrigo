@@ -4,7 +4,6 @@ import ContainerPage from "@/components/container";
 import FondoAnimate from "@/components/fondoAnimate";
 import TransitionPage from "@/components/transition-page";
 import TiltedCard from "@/src/Components/TiltedCard/TiltedCard";
-import BounceCards from "@/src/Components/BounceCards/BounceCards";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 import { useMediaQuery } from "react-responsive";
 

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Particles from "@/src/Backgrounds/Particles/Particles";
 

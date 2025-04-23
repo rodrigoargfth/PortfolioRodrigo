@@ -2,7 +2,6 @@
 
 import ContainerPage from "@/components/container";
 import FondoAnimate from "@/components/fondoAnimate";
-import TimeLine from "@/components/time-line";
 import TransitionPage from "@/components/transition-page";
 import Image from "next/image";
 
