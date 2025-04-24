@@ -27,13 +27,7 @@ const mediaIcons = [
 
 const Contact = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
-  const transformStyles = [
-    "rotate(5deg) translate(-150px)",
-    "rotate(0deg) translate(-70px)",
-    "rotate(-5deg)",
-    "rotate(5deg) translate(70px)",
-    "rotate(-5deg) translate(150px)",
-  ];
+
   const mediaComunity = mediaIcons.map((media) => ({
     icon: media.icon,
     name: media.name,
