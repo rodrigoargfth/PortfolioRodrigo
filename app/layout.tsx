@@ -16,8 +16,8 @@ const urbanist = Urbanist ({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
-  title: "Rodrigo Landing Page 👨🏽‍💻",
-  description: "Landing Page made by Rodrigo Aranda",
+  title: "Rodrigo Aranda 👨🏽‍💻",
+  description: "Mi portfolio Aranda Rodrigo",
 };
 
 export default function RootLayout({
