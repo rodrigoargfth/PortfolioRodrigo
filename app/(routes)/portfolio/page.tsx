@@ -1,7 +1,6 @@
 "user client";
 
 import ContainerPage from "@/components/container";
-import CoverParticles from "@/components/cover-particles";
 import FondoAnimate from "@/components/fondoAnimate";
 import TransitionPage from "@/components/transition-page";
 import Image from "next/image";
