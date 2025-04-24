@@ -80,9 +80,6 @@ const SkillPage = () => {
                 repeat={Infinity}
                 className="font-bold text-secundary"
               />
-              <span className="font-bold text-secundary">
-                habilidades
-              </span>
             </h1>
 
             <section className="mt-10">
