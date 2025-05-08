@@ -124,9 +124,8 @@ const Contact = () => {
                 ¿Querés contactarme por correo?
               </h2>
               <form
-                action="mailto:rodrigo.aranda.developer@gmail.com"
+                action="https://formspree.io/f/meogknbr"
                 method="POST"
-                encType="text/plain"
                 className="flex flex-col gap-4 w-full max-w-md md:max-w-sm lg:max-w-md mx-auto mb-20"
               >
                 <input
