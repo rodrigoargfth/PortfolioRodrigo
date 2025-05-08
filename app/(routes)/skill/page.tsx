@@ -177,52 +177,6 @@ const SkillPage = () => {
                 ))}
               </Swiper>
             </section>
-            {/* <section className="mt-16">
-              <h2 className="text-xl font-semibold mb-4">Frameworks</h2>
-              {isMobile ? (
-                <div className="flex justify-center">
-                  <BounceCards
-                    className="custom-bounceCards"
-                    items={frameWorks} // Aquí usamos el array con los íconos
-                    containerWidth={300}
-                    containerHeight={200}
-                    animationDelay={1}
-                    animationStagger={0.08}
-                    easeType="elastic.out(1, 0.5)"
-                    transformStyles={transformStyles}
-                    enableHover={false}
-                  />
-                </div>
-              ) : (
-                <div className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6">
-                  {frameworkIcons.map(({ icon, name }, idx) => (
-                    <TiltedCard
-                      key={idx}
-                      containerHeight="160px"
-                      containerWidth="160px"
-                      imageHeight="160px"
-                      imageWidth="160px"
-                      scaleOnHover={1.3}
-                      rotateAmplitude={30}
-                      showMobileWarning={false}
-                      showTooltip={true}
-                      displayOverlayContent={true}
-                    >
-                      <div className="w-full h-full flex items-center justify-center rounded-xl relative overflow-hidden">
-                        <div
-                          className="absolute inset-0 z-0"
-                          style={{
-                            background:
-                              "linear-gradient(to top, rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0))",
-                          }}
-                        />
-                        <div className="z-10 text-5xl">{icon}</div>
-                      </div>
-                    </TiltedCard>
-                  ))}
-                </div>
-              )}
-            </section> */}
           </ContainerPage>
         </div>
       </div>
