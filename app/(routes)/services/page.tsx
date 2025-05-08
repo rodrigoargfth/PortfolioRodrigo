@@ -11,7 +11,7 @@ const ServicesPage = () => {
       <div className="z-20 relative w-full">
         <TransitionPage />
         <FondoAnimate />
-        <div className="flex min-h-screen">
+        <div className="flex min-h-[100vh]">
           <ContainerPage>
             <h1 className="text-2xl leading-tight text-center md:text-left md:text-5xl md:mt-5">
               Mis{" "}
