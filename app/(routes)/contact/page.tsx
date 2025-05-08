@@ -10,29 +10,27 @@ import { useMediaQuery } from "react-responsive";
 const mediaIcons = [
   {
     icon: <FaWhatsapp size={50} color="#14C54E" />,
-    name: "Whatsapp",
     link: "https://wa.me/543571551393",
   },
   {
     icon: <FaLinkedin size={50} color="white" />,
-    name: "Linkedin",
     link: "https://www.linkedin.com/in/devrodrigoaranda/",
   },
   {
     icon: <FaGithub size={50} color="white" />,
-    name: "Github",
     link: "https://github.com/rodrigoargfth",
   },
 ];
 
 const Contact = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
 
   const mediaComunity = mediaIcons.map((media) => ({
     icon: media.icon,
-    name: media.name,
     link: media.link,
   }));
+
   return (
     <main>
       <div className="z-10 relative w-full overflow-hidden">
@@ -40,14 +38,14 @@ const Contact = () => {
         <TransitionPage />
         <div className="flex min-h-[100vh] h-full">
           <ContainerPage>
-            <h1 className="text-2xl leading-tight text-center md:text-left md:text-5xl md:mt-10">
+            <h1 className="text-2xl leading-tight text-center md:text-left md:text-5xl md:mt-2">
               Estos son mis{" "}
               <span className="font-bold text-secundary">Contactos</span>
             </h1>
             <section className="mt-6 flex justify-center">
               {isMobile ? (
-                <div className="flex justify-center gap-9">
-                  {mediaComunity.map(({ icon, name, link }, idx) => (
+                <div className="flex justify-center flex-wrap gap-6 max-w-[640px] mx-auto">
+                  {mediaComunity.map(({ icon, link }, idx) => (
                     <a
                       key={idx}
                       href={link}
@@ -56,20 +54,15 @@ const Contact = () => {
                       className="block"
                     >
                       <TiltedCard
-                        containerHeight="80px"
-                        containerWidth="80px"
-                        imageHeight="90px"
-                        imageWidth="90px"
+                        containerHeight="100px md:120px lg:160px"
+                        containerWidth="100px md:120px lg:160px"
+                        imageHeight="100px md:120px lg:160px"
+                        imageWidth="100px md:120px lg:160px"
                         scaleOnHover={1.3}
                         rotateAmplitude={30}
                         showMobileWarning={false}
                         showTooltip={true}
                         displayOverlayContent={true}
-                        overlayContent={
-                          <p className="text-white font-semibold text-center">
-                            {name}
-                          </p>
-                        }
                       >
                         <div className="w-full h-full flex items-center justify-center rounded-xl relative overflow-hidden">
                           <div
@@ -89,7 +82,7 @@ const Contact = () => {
                 </div>
               ) : (
                 <div className="flex justify-center flex-wrap gap-6">
-                  {mediaIcons.map(({ icon, name, link }, idx) => (
+                  {mediaIcons.map(({ icon, link }, idx) => (
                     <a
                       href={link}
                       target="_blank"
@@ -107,11 +100,6 @@ const Contact = () => {
                         showMobileWarning={false}
                         showTooltip={true}
                         displayOverlayContent={true}
-                        overlayContent={
-                          <p className="text-white font-semibold text-center">
-                            {name}
-                          </p>
-                        }
                       >
                         <div className="w-full h-full flex items-center justify-center rounded-xl relative overflow-hidden">
                           <div
@@ -140,7 +128,7 @@ const Contact = () => {
                 action="mailto:rodrigo.aranda.developer@gmail.com"
                 method="POST"
                 encType="text/plain"
-                className="flex flex-col gap-4 max-w-md w-full mx-auto"
+                className="flex flex-col gap-4 w-full max-w-md md:max-w-sm lg:max-w-md mx-auto mb-20"
               >
                 <input
                   type="text"

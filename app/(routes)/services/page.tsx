@@ -11,16 +11,16 @@ const ServicesPage = () => {
       <div className="z-20 relative w-full">
         <TransitionPage />
         <FondoAnimate />
-        <div className="flex h-screen">
+        <div className="flex min-h-screen">
           <ContainerPage>
-            <h1 className="text-2xl leading-tight text-center md:text-left md:text-5xl md:mt-10">
+            <h1 className="text-2xl leading-tight text-center md:text-left md:text-5xl md:mt-5">
               Mis{" "}
               <span className="font-bold text-secundary">
                 servicios profesionales
               </span>
             </h1>
             <div className="flex flex-col md:flex-row md:gap-18">
-              <div className="w-full md:w-1/3 md:flex lg:w-[55%] items-center mix-blend-lighten flex justify-center md:justify-end md:mr-8">
+              <div className="w-full md:w-1/3 lg:w-[55%] items-center mix-blend-lighten flex md:justify-end md:mr-8">
                 <Image
                   src="/serviceAvatar.png"
                   priority
