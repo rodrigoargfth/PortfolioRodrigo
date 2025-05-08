@@ -24,7 +24,6 @@ const mediaIcons = [
 
 const Contact = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
 
   const mediaComunity = mediaIcons.map((media) => ({
     icon: media.icon,
