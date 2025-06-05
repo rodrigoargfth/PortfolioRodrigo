@@ -12,6 +12,11 @@ const proyectos = [
     enlace: "https://yocurriolamagia.netlify.app/",
     github: "https://github.com/rodrigoargfth/YocurriolaMagiaOficial",
   },
+   {
+    nombre: "Peluqueria Canina",
+    src: "/PeluCanina.jpg",
+    github: "https://github.com/rodrigoargfth/PeluqueriaCanina.git",
+  },
 ];
 
 const PortfolioPage = () => {
@@ -28,7 +33,7 @@ const PortfolioPage = () => {
             </h1>
 
             {/* Contenedor centrado para la card */}
-            <div className="flex justify-center items-center">
+            <div className="flex flex-row justify-center items-center gap-x-6">
               {proyectos.map((proyecto, index) => (
                 <CardProyecto
                   key={index}
@@ -47,4 +52,3 @@ const PortfolioPage = () => {
 };
 
 export default PortfolioPage;
-
