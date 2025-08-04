@@ -1,6 +1,6 @@
 "use client";
 
-import { socialNetworks } from "@/data";
+import { socialNetworks } from "@/components/socialNetworks";
 import Link from "next/link";
 import MotionTransition from "./transition-component";
 

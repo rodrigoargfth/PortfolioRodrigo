@@ -1,6 +1,6 @@
 "use client";
 
-import Introduccion from "@/components/introduccion";
+import Introduccion from "@/app/(routes)/index/introduccion";
 import TransitionPage from "@/components/transition-page";
 
 export default function Home() {

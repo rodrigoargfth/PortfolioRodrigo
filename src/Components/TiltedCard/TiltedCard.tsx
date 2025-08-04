@@ -22,7 +22,7 @@ interface TiltedCardProps {
   showTooltip?: boolean;
   overlayContent?: React.ReactNode;
   displayOverlayContent?: boolean;
-  children?: React.ReactNode; // Permite que se pueda pasar contenido personalizado
+  children?: React.ReactNode;
 }
 
 const springValues: SpringOptions = {
