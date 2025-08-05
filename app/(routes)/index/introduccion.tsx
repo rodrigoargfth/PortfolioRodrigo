@@ -6,21 +6,21 @@ import FondoAnimate from "../../../components/fondoAnimate";
 
 const Introduccion = () => {
   return (
-    <div className="relative z-10 w-full">
+    <div className="relative z-10 w-full min-h-screen flex items-center">
       <FondoAnimate/>
-      <div className="z-20 grid items-center h-full p-4 pb-40 pt-40 md:py-0 md:grid-cols-2 gap-10 md:gap-18">
-        <div className="flex justify-center md:justify-end md:mr-8">
+      <div className="z-20 grid items-center w-full p-2 md:grid-cols-2 gap-6 md:gap-18">
+        <div className="flex justify-center md:justify-center md:mr-8 order-1 md:order-1">
           <Image
             src="/faceAvatar.png"
             priority
-            width="400"
-            height="400"
+            width={400}
+            height={400}
             alt="Avatar"
-           className="w-60 h-60 md:w-80 md:h-80 rounded-full shadow-2xl shadow-gray-900"
+           className="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full shadow-2xl shadow-gray-900"
           />
         </div>
-        <div className="flex flex-col justify-center max-w-md">
-          <h1 className="mb-2 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">
+        <div className="flex flex-col justify-center items-center md:items-start max-w-md mx-auto md:mx-0 order-2 md:order-2">
+          <h1 className="mb-4 text-xl sm:text-2xl leading-tight text-center md:text-left md:text-3xl lg:text-4xl md:mb-6 lg:mb-10">
             Si puedes imaginarlo, <br />
             <TypeAnimation
               sequence={[
@@ -40,22 +40,22 @@ const Introduccion = () => {
             />
           </h1>
 
-          <p className="mx-10 mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
+          <p className="mb-4 text-sm sm:text-base md:text-lg lg:text-xl text-center md:text-left leading-relaxed px-4 md:px-0 md:mb-6 lg:mb-8">
             Transformo ideas en experiencias digitales fluidas. Como
             desarrollador frontend y creador de contenido, diseño interfaces que
             no solo se ven bien, sino que funcionan a la perfección para todos
           </p>
 
-          <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:justify-start md:gap-6 lg:gap-10 w-full">
             <a
               href="/portfolio"
-              className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-secundary hover:border-secundary hover:text-secundary"
+              className="px-4 py-2 transition-all border-2 cursor-pointer text-sm sm:text-md w-fit rounded-xl hover:shadow-xl hover:shadow-secundary hover:border-secundary hover:text-secundary"
             >
               Ver proyectos
             </a>
             <a
               href="/contact"
-              className="px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-secundary hover:border-secundary hover:text-secundary">
+              className="px-4 py-2 transition-all border-2 cursor-pointer text-sm sm:text-md w-fit rounded-xl hover:shadow-xl hover:shadow-secundary hover:border-secundary hover:text-secundary">
               Contacta conmigo
             </a>
           </div>

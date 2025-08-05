@@ -45,13 +45,13 @@ const CardProyecto = ({
   );
 
   return (
-    <div className="relative w-[500px] h-[300px] rounded-2xl overflow-hidden shadow-2xl group bg-gray-300">
+    <div className="relative w-[90vw] max-w-[550px] h-[300px] sm:h-[280px] rounded-2xl overflow-hidden shadow-2xl group bg-gray-300">
       {imagenActual && (
         <Image
           src={imagenActual}
           alt={`Imagen de ${nombre}`}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          className="object-contain group-hover:scale-105 transition-transf  orm duration-500"
           quality={100}
           priority
         />

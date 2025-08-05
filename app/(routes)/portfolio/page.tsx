@@ -43,7 +43,7 @@ const PortfolioPage = () => {
             {/* Contenedor centrado para la card */}
             <div className="flex flex-col justify-center items-center gap-y-8">
               {/* Fila de arriba: las dos primeras tarjetas */}
-              <div className="flex flex-row gap-x-24">
+              <div className="flex flex-col md:flex-row gap-y-8 md:gap-x-24 items-center sm:items-start">
                 {proyectos.slice(0, 2).map((proyecto, index) => (
                   <CardProyecto
                     key={index}
